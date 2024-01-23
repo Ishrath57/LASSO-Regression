@@ -19,18 +19,13 @@ editor:
 
 ## Introduction
 
-### What is "mehtod"?
+### What is LASSO Regression?
 
-This is an introduction to Kernel regression, which is a non-parametric
-estimator that estimates the conditional expectation of two variables
-which is random. The goal of a kernel regression is to discover the
-non-linear relationship between two random variables. To discover the
-non-linear relationship, kernel estimator or kernel smoothing is the
-main method to estimate the curve for non-parametric statistics. In
-kernel estimator, weight function is known as kernel function
-[@efr2008]. Cite this paper [@bro2014principal]. The GEE [@wang2014].
+LASSO (Least Absolute Shrinkage and Selection Operator) regression is a technique used for regularization and variable selection in machine learning and statistics. By placing a limit on the model parameters and requiring the total of the absolute values of the regression coefficients to be smaller than a predetermined value (λ), it seeks to minimize the prediction error. Due to this restriction, the solution is sparse, meaning that some regression coefficients are reduced to a value of zero, hence removing the associated variables from the model. Automated k-fold cross-validation, which divides the dataset into k subsamples, uses k-1 subsamples for model construction, and validates the model on the remaining subsample, is commonly used to determine the choice of λ. After carrying out this procedure k times, the pooled validation results are used to determine the preferred λ. [@J2018]
 
-This is my work and I want to add more work...
+
+Combining shrinkage and variable selection for linear regression is known as LASSO (Least Absolute Shrinkage and Selection Operator) regression. This is accomplished by including an L1 penalty term, which reduces several feature coefficients to zero and enables automated variable, model, and parameter selection. The LASSO regression model is being utilized more and more in brain modeling, text classification utilizing tidy data principles, and medical diagnosis to predict disease outcomes and side effects. By placing restrictions on the model's parameters and causing the regression coefficients to decrease toward zero, it seeks to determine the variables and regression coefficients that minimize prediction error. This technique works very well with models that have a lot of multicollinearity and has been used in a variety of domains, such as genetic data.[@C2022]
+
 
 ### Related work
 
