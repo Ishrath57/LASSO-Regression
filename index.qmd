@@ -26,6 +26,36 @@ LASSO (Least Absolute Shrinkage and Selection Operator) regression is a techniqu
 
 Combining shrinkage and variable selection for linear regression is known as LASSO (Least Absolute Shrinkage and Selection Operator) regression. This is accomplished by including an L1 penalty term, which reduces several feature coefficients to zero and enables automated variable, model, and parameter selection. The LASSO regression model is being utilized more and more in brain modeling, text classification utilizing tidy data principles, and medical diagnosis to predict disease outcomes and side effects. By placing restrictions on the model's parameters and causing the regression coefficients to decrease toward zero, it seeks to determine the variables and regression coefficients that minimize prediction error. This technique works very well with models that have a lot of multicollinearity and has been used in a variety of domains, such as genetic data.[@C2022]
 
+Using the LASSO (Least Absolute Shrinkage and Selection Operator) regression method for economic indicator modeling is the aim of the project "Advance statistical modeling of economic indicators: A LASSO regression approach". Because LASSO is a statistical technique that does both variable selection and regularization, it can be used to reduce overfitting and pick key variables that improve the accuracy of economic models. The project's goal is to use LASSO's feature selection and regularization skills to create a statistical model for economic indicators that is more precise and effective. When it comes to economic indicator modeling, the LASSO approach is well-known for its capacity to manage high-dimensional data and enhance forecast accuracy through the selection of pertinent variables and the reduction of regression coefficients.[@Emmert]
+
+The use of the LASSO (Least Absolute Shrinkage and Selection Operator) regression approach in advanced statistical modeling of economic indicators is important for several reasons:
+
+Variable Selection and Regularization:
+In economic indicator modeling, where the impact of some factors may be more substantial than that of others, LASSO aids in the selection of the most pertinent variables and the exclusion of the less significant ones.
+
+Handling Multicollinearity:
+By reducing the coefficients of linked variables, LASSO helps manage multicollinearity, a prevalent problem in economic data, and provide more stable and understandable models.[@Emmert]
+
+Prediction Accuracy: 
+The accuracy of predictive models for economic indicators can be increased via LASSO by minimizing overfitting and concentrating on the most important variables.
+
+Methods:
+The LASSO (Least Absolute Shrinkage and Selection Operator) method is solved using a regularization process that involves minimizing the sum of the squared error term and the absolute magnitude of the regression coefficients. This is achieved through the following methods:
+
+1.	Mathematical Formulation: The LASSO method solves the optimization problem by minimizing the residual sum of squares subject to the constraint that the sum of the absolute values of the coefficients is less than a constant.
+
+2.	Coordinate Descent Algorithm: One common method for solving the LASSO problem is the coordinate descent algorithm, which iteratively updates the coefficients by fixing all but one coefficient at each step.
+
+3.	Least Angle Regression (LARS): LARS is another method used to solve the LASSO problem, particularly for high-dimensional data. It proceeds in a direction equiangular to each of the predictors and has the advantage of being computationally efficient.[@R-base]
+
+
+Result/Limitations:
+Inability for Large Values: 
+For large values of the explanatory variables, Lasso models—including the linear one—cannot be accurate or even somewhat accurate.
+
+Difficulty in Interpreting Significance:
+Since Lasso does not explicitly provide p-values for hypothesis testing, it might be difficult to establish which variables are statistically significant.[@R-base]
+
 
 ### Related work
 
