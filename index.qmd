@@ -57,6 +57,21 @@ Difficulty in Interpreting Significance:
 Since Lasso does not explicitly provide p-values for hypothesis testing, it might be difficult to establish which variables are statistically significant.[@R-base]
 
 
+
+When the total of the absolute values of the coefficients is less than a constant, the "lasso" reduces the residual sum of squares. This constraint tends to yield certain coefficients that are exactly 0, which results in models that are understandable. Based on our simulation simulations, it appears that the lasso benefits from certain advantageous aspects of both ridge regression and subset selection. It demonstrates the stability of ridge regression and generates interpretable models such as subset selection. Additionally, there's an intriguing connection to Donoho and Johnstone's recent work on adaptive function estimation. The lasso concept is quite generic and can be used in many different statistical models: brief descriptions are given of expansions to generalized regression models and tree-based models.[@J2021]
+
+Tibshirani (1996) proposed the least absolute shrinkage and selection operator (LASSO) for simultaneous parameter estimation and variable (model) selection in regression analysis. A specific instance of penalized least squares regression using the L1-penalty function is the LASSO.
+The LASSO estimate can be defined by
+$$
+\begin{equation*} \hat{\beta}^{lasso}=\underset{\beta}{\arg\min}\left\{\frac{1}{2}\sum_{i=1}^{N}\left(y_{i}-\beta_{0}-\sum_{j=1}^{p}x_{ij}\beta_{j}\right)^{2}+\lambda\sum_{j=1}^{p}\left\vert\beta_{j}\right\vert\right\} \tag{2} \end{equation*} $$
+
+which can also be written as
+$$ \begin{align*} \hat{\beta}^{lasso}= & \underset{\beta}{\arg\min}\sum_{i=1}^{N}\left(y_{i}-\beta_{0}-\sum_{j=1}^{p}x_{ij}\beta_{j}\right)^{2},\\ & \quad\text{subject to}\ \sum_{j=1}^{p}\left\vert\beta_{j}\right\vert\leq t, \end{align*}
+$$
+LASSO truncates at zero and transforms all coefficients by a constant component λ. It is therefore a prospective variable selection technique for regression. As long as the total of the coefficients' absolute values is less than a constant, it reduces the residual sum of squares. Although LASSO was first developed in relation to least squares, it can be used to a broad range of models.[@788]
+
+By combining the advantages of subset selection with ridge regression, LASSO enhances both prediction accuracy and model interpretability. When the set of predictors has a high correlation, LASSO selects one and reduces the others to zero. By precisely decreasing some of the coefficients to zero, it produces models that are easy to understand and lowers the variability of the estimations.[@788]
+
 ### Related work
 
 This section is going to cover the literature review...
